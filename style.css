@@ -1,138 +1,115 @@
-body{
-	margin: 0;
-	overflow: hidden;
-	border: 0;
-	background-image: url(https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-header{
-	height: 650px;
-
-
-}
-.headerImg{
-	height: 650px;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-
-
-
-}
-
-.moto{
-	color: #ffffff;
-	font-size: 70px;
-	font-family: 'Poppins', sans-serif;
-
-	
-
-
-  	
-}
-
-button{
-	transform: translate(-50%,-50%);
-	position: absolute;
-	background: none;
-	color: #ffc145;
-	width: 240px;
-	height: 80px;
-	border: 1px solid #ffffff;
-	font-size: 18px;
-	border-radius: 4px;
-	transition: .6s;
-	overflow: hidden;
-	top: 500px;
-	left: 50%;
-	text-align: center;
-
-}
-
-button: focus {
-	outline: none;
-}
-
-button:before{
-	content: '';
-	display: block;
-	position: absolute;
-	background: rgba(255,255,255,.5);
-	width: 60px;
-	height: 100%;
-	top: 0;
-	left:0;
-	opacity: .5s;
-	filter: blur(30px);
-	transform: translateX(-130px) skewX(-15deg);
-
-}
-
-button:after{
-    content: '';
-	display: block;
-	position: absolute;
-	background: rgba(255,255,255,.2);
-	width: 30px;
-	height: 30px;
-	top: 0;
-	left: 30px;
-	opacity: 0;
-	filter: blur(30px);
-	transform: translateX(-100px) skewX(-15deg);
-}
-
-button:hover{
-	background: #ffc145;
-	cursor: pointer;
-	color: #ffffff;
-}
-
-button:hover:before{
-	transform: translateX(300px) skewX(-15deg);
-	opacity: .6s;
-	transition: .7s;
-
-}
-button:hover:after{
-	transform: translateX(300px) skewX(-15deg);
-	opacity: 1s;
-	transition: .7s;
-
-}
-
-.row{
-	content: "";
-  	display: table;
-  	clear: both;
-}
-
-.col{
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.service .sub{
-	text-align: center;
-	color: #ffc145;
-	font-size: 50px;
-	font-weight: bold;
-	font-family: 'Oswald', sans-serif;
-}
-
 .navbar-brand span
 {
-	font-family: 'Poppins', sans-serif;
-	font-size: 18px;
-	color: goldenrod;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: goldenrod;
 }
 
 .navbar-nav > li
 {
-	font-size: 18px;
-	margin-top: -1.25%;
-	margin-right: 6%;
+  font-size: 18px;
+  margin-top: -1.25%;
+  margin-right: 6%;
+}
+
+body
+{
+  background-image: url(https://media.discordapp.net/attachments/693506566900678676/693889491819298876/woman-pouring-juice-on-glass-3184192.jpg?width=1015&height=677);
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
+}
+
+.headerImg
+{
+  height: 675px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moto h1
+{
+  color: #ffc145;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 10px;
+}
+
+.draw-border 
+{
+  box-shadow: inset 0 0 0 4px #BFD1FD;
+  color: #BFD1FD;
+  transition: color 0.25s 0.0833333333s;
+  position: absolute;
+  top: 500px;
+}
+
+.draw-border::before, .draw-border::after 
+{
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw-border::before 
+{
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.draw-border::after 
+{
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.draw-border:hover 
+{
+  color: #ffc145;
+}
+
+.draw-border:hover::before, .draw-border:hover::after 
+{
+  border-color: #ffc145;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.draw-border:hover::before 
+{
+  transition-delay: 0s, 0s, 0.25s;
+}
+
+.draw-border:hover::after 
+{
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn 
+{
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+
+.btn:focus 
+{
+  outline: 2px solid #BFD1FD;
 }
