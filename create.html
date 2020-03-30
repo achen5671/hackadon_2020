@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="create.css">
+
+  <!-- Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Icon on top -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/693506566900678676/693840786328125510/hermesshoe1_WdT_icon.ico" />
+
+  
+</head>
+<body>
+  <nav class="navbar bg-dark navbar-dark navbar-expand-lg navbar-light">
+
+    <div class="navbar-brand" href="#">
+      <img src="https://cdn.discordapp.com/attachments/693506566900678676/693810333369892964/hermesshoe1.png" height="40" width="40">
+      <span class="nav-text"><i>Hermes</i></span>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=".create.html">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./service.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/delivery">Delivery</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="headerImg">
+      <div class="moto">
+        <p>Make it!</p>
+      </div>
+    </div>
+  </header>
+
+  <form class="form">
+    <div class="stepOne">
+      <h3>Step 1</h3>
+      <input type="checkbox" id="mealType1" name="meal-type1" value="Breakfast">
+      <label for="mealType1">Breakfast</label>
+
+      <input type="checkbox" id="mealType2" name="meal-type2" value="Lunch">
+      <label for="mealType2">Lunch</label>
+
+      <input type="checkbox" id="mealType3" name="meal-type3" value="Dinner">
+      <label for="mealType3">Dinner</label>
+    </div>
+
+    <div class="stepTwo">
+      <h3>Step 2</h3>
+      <input type="checkbox" id="cuisineType1" name="cuisine-type" value="">
+      <label for="cuisineType1">American</label>
+
+      <input type="checkbox" id="cuisineType2" name="cuisine-type" value="">
+      <label for="cuisineType2">Mexican</label>
+
+      <input type="checkbox" id="cuisineType3" name="cuisine-type" value="">
+      <label for="cuisineType3">Chinese</label>
+
+      <input type="checkbox" id="cuisineType4" name="cuisine-type" value="">
+      <label for="cuisineType4">Japanese</label>
+
+      <input type="checkbox" id="cuisineType5" name="cuisine-type" value="">
+      <label for="cuisineType5">Indian</label>
+
+      <input type="checkbox" id="cuisineType6" name="cuisine-type" value="">
+      <label for="cuisineType6">Mediterranean</label>
+
+      <input type="checkbox" id="cuisineType7" name="cuisine-type" value="">
+      <label for="cuisineType7">Middle-Eastern</label>
+
+      <input type="checkbox" id="cuisineType8" name="cuisine-type" value="">
+      <label for="cuisineType8">Italian</label>
+    </div>
+
+    <div class="stepThree">
+      <h3>Step 3</h3>
+      <div class="box"><center><div id="value"></div></center></div>
+      <input type="range" min="0" max="190" id="slider" value="50" class="slider">
+    </div>
+
+    <div class="stepFour">
+      <h3>Step 4</h3>
+      <input type="checkbox" id="dietType1" name="diet-type" value="">
+      <label for="dietType1">Balanced</label>
+
+      <input type="checkbox" id="dietType2" name="diet-type" value="">
+      <label for="dietType2">High-Protein</label>
+
+      <input type="checkbox" id="dietType3" name="diet-type" value="">
+      <label for="dietType3">Low-Carb</label>
+
+      <input type="checkbox" id="dietType4" name="diet-type" value="">
+      <label for="dietType4">Low-Fat</label>
+
+      <input type="checkbox" id="dietType5" name="diet-type" value="">
+      <label for="dietType5">Low-Sodium</label>
+    </div>
+
+
+    <div class="stepFive">
+      <h3>Step 5</h3>
+      <div class="box"><center><div id="value2"></div></center></div>
+      <input type="range" min="0" max="2000" id="slider2" value="50" class="slider">
+    </div>
+
+    <div class="stepSix">
+      <h3>Step 6</h3>
+      <input type="checkbox" id="health1" name="health" value="">
+      <label for="health1">Crustacean</label>
+
+      <input type="checkbox" id="health2" name="health" value="">
+      <label for="health2">Dairy</label>
+
+      <input type="checkbox" id="health3" name="health" value="">
+      <label for="health3">Egg</label>
+
+      <input type="checkbox" id="health4" name="health" value="">
+      <label for="health4">Fish</label>
+
+      <input type="checkbox" id="health5" name="health" value="">
+      <label for="health5">Gluten</label>
+
+      <input type="checkbox" id="health6" name="health" value="">
+      <label for="health6">Keto</label>
+
+      <input type="checkbox" id="health7" name="health" value="">
+      <label for="health7">No oil</label>
+
+      <input type="checkbox" id="health8" name="health" value="">
+      <label for="health8">No sugar</label>
+
+      <input type="checkbox" id="health9" name="health" value="">
+      <label for="health9">Paleo</label>
+
+      <input type="checkbox" id="health10" name="health" value="">
+      <label for="health1">Peanuts</label>
+
+      <input type="checkbox" id="health11" name="health" value="">
+      <label for="health11">Pescatarain </label>
+
+      <input type="checkbox" id="health12" name="health" value="">
+      <label for="health12">Pork-free</label>
+
+      <input type="checkbox" id="health13" name="health" value="">
+      <label for="health13">Red-meat free</label>
+
+      <input type="checkbox" id="health14" name="health" value="">
+      <label for="health14">Soy</label>
+
+      <input type="checkbox" id="health15" name="health" value="">
+      <label for="health15">Vegan</label>
+
+      <input type="checkbox" id="health16" name="health" value="">
+      <label for="health16">Vegetarian</label>
+
+    </div>
+
+
+  </form>
+
+
+
+
+
+  
+  <script type="text/javascript" src="script.js"></script>
+  
+</body>
+</html>
