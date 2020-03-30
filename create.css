@@ -103,15 +103,61 @@ input[type=checkbox]:checked + label:before{
 
 .form{
 	
-  	justify-content: center;
-  	align-items: center;
+	padding-top: 20px;
+
 }
 
-.form input{
-	border-color: black;
+.step{
+	text-align: center;
+}
+.step input{
+	border: transparent;
+	text-align: center;
+	height: 75px;
+	width: 75%;
+	margin: 5px;
+ 
 	
 }
 
+.step h3{
+	justify-content: center;
+  	align-items: center;
+  	display: flex;
+  	font-family: 'Poppins', sans-serif;
+  	margin-top: 15px;
+  	color: #ffc145;
+  	font-weight: bold;
+	
+}
+
+.step p {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.create{
+
+	background-color: #f2f3f4;
+}
+
+
+
+.button {
+	padding-top: 10px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 
 
