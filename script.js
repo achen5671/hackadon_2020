@@ -13,3 +13,5 @@ slider.oninput = function(){
 slider2.oninput = function(){
 	val2.innerHTML = this.value;
 }
+
+
